@@ -1,0 +1,36 @@
+Q1/ What is the Difference between Comparable and Comparator? Explain with examples.
+
+Q2/- Consider the following bean class:
+Employee
+empId: int
+empName: String
+address: String
+salary: int
+
+
+● Add 6 Employee objects inside the TreeSet class with proper details.
+
+● Write a program to take the input from the user.
+
+● If the user enters 1 then sort the Employee by using its empId
+
+● If the user enters 2 then sort the Employees using their address.
+
+● If the User enters 3 then sort the Employee using their Salary, and if the salary is the
+same for 2 Employee then sort them using their name.
+
+Q3/- Consider the following bean class:
+Student:
+roll: int
+name: String
+address: String
+marks: int
+
+● Create a List of 5 Student objects with proper details.
+
+● Remove the duplicate Student object from the List.
+
+● Sort the List of Students according to their marks, and if the marks are the same then
+sort them according to their name.
+
+● Print all the Student details from the List of Student object.

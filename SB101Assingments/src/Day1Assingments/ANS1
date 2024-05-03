@@ -1,0 +1,18 @@
+Comparable va Comparator.
+
+
+comparable=>
+        
+        1 comparable belong to java.lang package.
+        2 comparable is use to sort the object within the class.
+        3 using comparable we can sort the object only one way.
+        4 comparable have only one abstract method called 
+           public int compareTo(Object obj);
+
+Comparator=>
+           
+        1 comparator belong to java.util package.
+        2 comparator is use to sort the object out side of the class of sorting.
+        3 using comparator we can sort the object many way.
+        4 comparator have only one abstract method called 
+           public int compare(Object obj1,Object obj2);                             
