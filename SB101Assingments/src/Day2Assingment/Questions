@@ -1,0 +1,25 @@
+Q1/- Create a List of cities and sort them in descending order using Lambda
+Expression.
+
+Q2/- implement the following method of a functional interface using method reference.
+Interface X{
+public int convetStringToNumber(String s);
+}
+
+Q3/- Implement the following interface using Lambda Expression.
+interface PrintList {
+abstract void display(List<String> city);
+}
+From the main method, call the above method by supplying a List of 5 cities.
+
+Q4/- Create a Product bean class having the following properties:
+productId: int,
+productName: String,
+quantity: int,
+price: int
+Inside the main method of the Demo class, create a List of 5 products and sort that
+list by using price (in descending order)
+Note: for sorting, make use of the Lambda expression.
+
+Q5/- Explain about the Method Reference, How many ways we can refer to an existing
+implementation explain with examples.
