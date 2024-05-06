@@ -1,0 +1,46 @@
+Q1/ - Write down some predefined Functional interfaces in the java library at least 4
+interfaces, with their methods.
+
+
+ANS=> 
+     In java there is many predefined Functional Interface in the java library
+     
+     1=> java.lang.Comparable
+     
+     Interface Comparable<T t>{
+     
+     //method
+     int compareTo(T t);
+     
+     }
+     
+     2=> java.util.Comparator
+     
+     Interface Comparable<T t>{
+     
+     //method
+     int compare(T t1,T t2);
+     
+     }
+     
+     3=>Predicate<T t>
+     
+     boolean test(T t);
+     
+     
+	 4=>Supplier<T t>
+	 
+	 String get();
+	 
+	 
+	 
+	 5=>Consumer<T t>
+	 
+	 void accept(T t)
+     
+	 
+	 
+	 
+	 6=>Function<T t>
+	 
+	  R apply(T t,R r);

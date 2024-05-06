@@ -1,0 +1,25 @@
+Q1/ - Write down some predefined Functional interfaces in the java library at least 4
+interfaces, with their methods.
+
+Q2/- Implement the following functional interfaces with some basic examples using Lambda
+expression.
+Predicate
+Supplier
+Consumer
+Function
+
+Q3/- Sort the following Map by its value (by Student name in descending order), using
+Lambda expressions. In this Map key will be Country name and value will be the Student
+object.
+public Map<String, Student> sortMapUsingStudentName(Map<String, Student>
+originalMap);
+Student class
+roll
+name
+email
+marks
+
+● Call the above method by passing a HashMap object with 5 entries
+● Print all the student details belonging from each country.
+
+Note: to print the details make use of the Lambda expression
