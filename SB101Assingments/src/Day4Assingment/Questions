@@ -1,0 +1,29 @@
+Q1/- Create a Product bean class with the following properties:
+productId
+productName
+price
+quantity
+
+● From the main method of the Demo class performs the following operations:
+1. Create a List of 5 product objects.
+
+2. From the product list filter the products whose quantity is more than 10 in a
+separate List of Products.
+
+3. Sort the Filtered List of Products by the price in ascending order.
+
+4. Print all the products one by one from both Lists (original list and Filtered list)
+
+Note: for filtering and printing and sorting make use of Stream or Lambda
+expressions.
+
+Q2/- Create a List of 5 Student objects and from that List get the highest marks Student by
+using Stream API.
+
+Q3/- Create a List of Integers and Map each integer to their square inside another List.
+Print both the List using Lambda expressions.
+
+Q4/ Create a Set of 5 Student objects and from that set filter those students whose marks is
+less than 500 and put all the filtered Student object inside another Set object.
+
+Note: make sure that there should not be any duplicate Student object.
