@@ -1,0 +1,118 @@
+Note: All the questions are compulsory.
+The duration of the test is 1.5 hours
+Mode of Submission: Github Link
+Don’t seek help from any person/resource during the test.
+Marks Distribution is as follows:
+Q1: 3 Marks
+Q2: 3 Marks
+Q3: 4 Marks
+
+
+Q1/- Write the implementations of all the following Functional interfaces with examples using
+the Lamda expression.
+
+Predicate<Student>: if the student's marks is less than 500
+Consumer:<Student>: print the student's details
+Supplier<Student>: get the Student object with all details(roll, name, marks)
+Function<String, Integer>: Get any number in String format and return the number in
+Integer format.
+
+
+Q2/- Consider the following bean class:
+Product:
+productId: int,
+productName: String
+price: int
+quantity: int
+● Create a List of 6 products (Pen, Pencil, Rubber, Sharpener, Scale, Compass)
+● Filter the Products whose quantity is less than 2 using Lambda Expression
+● Sort the List of Products by using the price in descending order.
+Note: For Sorting make use of Lambda Expression.
+● Print each element from the List by using Method Reference.
+
+Q3/- The district central library needs an application to store book details of their
+library. The clerk has all the rights to add a new book, search for any book, display the
+book details and should update the count of the total number of books.
+You are provided with a Book bean class with the following attributes:
+● Int isbn
+● String bookName
+● String author
+Create a class Library that will maintain the List of Books.
+● Include the following public methods:
+
+1. void addBook(Book book)throws BookException: This method should add the book
+object to the booklist, if any duplicate book we try to add it throws a BookException
+with a proper message.
+
+2. List viewAllBooks()throws BookException: This method should return the list of books
+maintained in the library, if there is no any book then throw the BookException with
+the proper message.
+Return the list of Book sorted by bookName.
+Write the sorting logic by using the Lambda expression
+
+3. List viewBooksByAuthor(String author)throws BookException: This method should
+return a list of books written by the author passed as an argument. If there is no any
+book by the author then throw BookException with the proper message.
+
+4. Book getBookByISBN(int isbn)throws BookException: this method should return the
+Book based on isbn number, if a book is not found then throws the BookException
+with proper message.
+
+BookException should be the checked exception
+Write a Main class to test the above functionalities and handle the exception using a
+try-catch block. and in catch block show any exception related message.
+Note: the application should be terminated normally, and for sorting and printing logic
+make use of Lambda expressions.
+
+Sample Input and Output 1:
+1. Add Book
+2. Display all book details
+3. Search Book by author
+4. Search book by ISBN
+5. Exit
+
+Enter your choice: 1
+Enter the isbn no: 123
+Enter the book name: Java
+Enter the author name: Bruce Eckel
+Output: Book added successfully
+1. Add Book
+2. Display all book details
+3. Search Book by author
+4. Search book by ISBN
+5. Exit
+
+Enter your choice: 1
+Enter the isbn no: 123
+Enter the book name: Java
+Enter the author name: Bruce Eckel
+Output: Book already exists.
+1. Add Book
+2. Display all book details
+3. Search Book by author
+4. Search book by ISBN
+5. Exit
+
+Enter your choice: 3
+Enter the author name: Henry
+Output: None of the book published by the author Henry
+1. Add Book
+2. Display all book details
+3. Search Book by author
+4. Search book by ISBN
+5. Exit
+
+Enter your choice: 3
+Enter the author name: Bruce Eckel
+Output:
+ISBN no: 123
+Book name: Java
+Author name: Bruce Eckel
+1. Add Book
+2. Display all book details
+3. Search Book by author
+4. Search book by ISBN
+5. Exit
+Enter your choice: 5
+Output:
+Thank You..!!
