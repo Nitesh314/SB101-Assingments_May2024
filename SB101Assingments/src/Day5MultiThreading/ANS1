@@ -1,0 +1,22 @@
+
+Q1) What do you mean by Multithreading In Java?
+
+Multithreading in Java refers to the concurrent execution of two or more threads
+ in a single process. A thread in Java represents a separate flow of control 
+ within a program. Multithreading allows a program to perform multiple tasks 
+ simultaneously, enhancing performance and responsiveness.
+
+In Java, you can create threads by extending the Thread class or implementing 
+the Runnable interface. Once created, threads can run concurrently, enabling 
+developers to execute multiple tasks concurrently within a single program.
+
+Java provides built-in support for multithreading through its java.lang.Thread 
+class and java.lang.Runnable interface. Additionally, Java offers synchronization 
+mechanisms such as locks, semaphores, and monitors to control access to shared 
+resources and ensure thread safety.
+
+Multithreading is commonly used in Java applications for various purposes, 
+such as improving user interface responsiveness, parallelizing computations 
+to leverage multicore processors, and implementing concurrent server applications.
+ However, it requires careful design and synchronization to avoid issues such as 
+ race conditions, deadlock, and thread interference.

@@ -1,0 +1,19 @@
+Q1) What do you mean by Multithreading In Java?
+
+Q2) What are the benefits of using Multithreading?
+
+Q3) Differentiate between process and thread based multitasking.
+
+Q4) What are the different states of a thread, or what is thread lifecycle?
+
+Q5) Differentiate between the Thread class and Runnable interface for creating a
+Thread? with proper example.
+
+Q6) What if we call Java run() method directly instead start() method?
+
+Q7) Create an application in which start 2 threads along with main thread :
+● Both threads will print their priority along with the thread name 10 times.
+● From the main method set the name of both the thread as Dhoni thread for thread 1
+And Kohli thread for thread 2,
+● Set the priority for thread1 as 8 and thread2 as 10.
+Note: Both threads should run on a single object

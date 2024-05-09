@@ -1,0 +1,13 @@
+Q6) What if we call Java run() method directly instead start() method?
+
+
+
+In Java, if you call the run() method directly instead of the start() method on a
+ Thread object, the code inside the run() method will be executed in the context 
+ of the current thread rather than being executed as a separate thread of execution.
+ 
+
+Calling run() directly does not create a new thread; instead, it executes the run()
+ method's code in the current thread's context. This means that the code inside 
+ run() will be executed sequentially, just like any other method call, without any 
+ concurrency.

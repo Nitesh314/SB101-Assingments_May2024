@@ -1,0 +1,55 @@
+Q5) Differentiate between the Thread class and Runnable interface for creating a
+Thread? with proper example.
+
+
+In Java, you can create a thread either by extending the `Thread` class or by 
+implementing the `Runnable` interface. Here's a differentiation between the two 
+approaches with examples:
+
+1. **Extending the Thread class**:
+   - When you extend the `Thread` class, your class becomes a thread itself. 
+   You override the `run()` method, which contains the code that will be executed 
+   by the thread when it is started.
+   - This approach is suitable when you want to create a thread with custom 
+   behavior, directly as a subclass of `Thread`.
+   - However, Java doesn't support multiple inheritances, so if your class is 
+   already extending another class, you cannot extend `Thread`.
+   - Here's an example:
+
+class MyThread extends Thread {
+    public void run() {
+        System.out.println("MyThread is running");
+    }
+
+    public static void main(String[] args) {
+        MyThread thread = new MyThread();
+        thread.start();
+    }
+}
+
+2. **Implementing the Runnable interface**:
+   - When you implement the `Runnable` interface, your class doesn't become a 
+   thread itself. Instead, it provides the code that will be executed by a thread. 
+   You need to create an instance of `Thread` and pass an instance of your 
+   Runnable` implementation to it.
+   - This approach is more flexible, as you can still extend other classes while 
+   implementing `Runnable`.
+   - Here's an example:
+
+class MyRunnable implements Runnable {
+    public void run() {
+        System.out.println("MyRunnable is running");
+    }
+
+    public static void main(String[] args) {
+        Thread thread = new Thread(new MyRunnable());
+        thread.start();
+    }
+}
+
+
+In summary, both approaches enable you to create threads, but extending the 
+Thread` class directly creates a thread with custom behavior, while implementing 
+the `Runnable` interface separates the thread's behavior from the thread object 
+itself, providing more flexibility and better adhering to the principle of 
+separation of concerns.

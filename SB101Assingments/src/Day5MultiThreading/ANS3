@@ -1,0 +1,45 @@
+Q3) Differentiate between process and thread based multitasking.
+
+
+
+Process-based multitasking and thread-based multitasking are two approaches to 
+achieving multitasking in computing, each with its characteristics and advantages.
+
+1. **Process-Based Multitasking**:
+   - **Definition**: In process-based multitasking, multiple independent processes 
+   run concurrently. Each process has its memory space, resources, and execution 
+   context.
+   - **Isolation**: Processes are isolated from each other, meaning that one 
+   process cannot directly access the memory or resources of another process 
+   without using inter-process communication mechanisms.
+   - **Overhead**: Process creation and management involve significant overhead, 
+   including memory allocation, context switching, and inter-process communication.
+   - **Reliability**: Since processes are isolated, a failure in one process 
+   typically does not affect others, enhancing system reliability.
+   - **Scalability**: Process-based multitasking is suitable for systems with 
+   multiple CPUs or cores, as different processes can be distributed across the 
+   available resources.
+
+2. **Thread-Based Multitasking**:
+   - **Definition**: In thread-based multitasking, a single process contains 
+   multiple threads of execution that share the same memory space and resources. 
+   Threads within a process can execute concurrently.
+   - **Shared Memory**: Threads within the same process share the same memory 
+   space, allowing them to communicate and share data more efficiently compared 
+   to processes.
+   - **Lightweight**: Threads are lighter-weight than processes, as they share 
+   resources and do not require separate memory allocation. Thread creation and 
+   context switching typically involve less overhead compared to processes.
+   - **Synchronization**: Threads within a process need synchronization mechanisms
+    such as locks, mutexes, and semaphores to coordinate access to shared 
+    resources and avoid race conditions.
+   - **Scalability**: Thread-based multitasking is well-suited for systems with 
+   a single CPU or core, as threads within a process can be scheduled for 
+   execution on the available CPU time slices.
+
+In summary, process-based multitasking provides isolation and reliability at 
+the expense of higher overhead, while thread-based multitasking offers lightweight
+ concurrency within a single process with lower overhead but requires careful 
+ synchronization to manage shared resources. The choice between these approaches 
+ depends on factors such as system architecture, resource constraints, and 
+ application requirements.

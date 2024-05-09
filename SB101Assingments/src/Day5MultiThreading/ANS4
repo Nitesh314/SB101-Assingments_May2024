@@ -1,0 +1,31 @@
+Q4) What are the different states of a thread, or what is thread lifecycle?
+
+
+The lifecycle of a thread in Java refers to the various states a thread transitions
+ through during its lifetime. The thread lifecycle includes several states:
+
+1. **New**: When a thread is created, it is in the new state. In this state, the thread has been instantiated but has not yet started executing.
+
+2. **Runnable**: After calling the thread's `start()` method, it enters the 
+runnable state. In this state, the thread is eligible to run, but the Java 
+Virtual Machine (JVM) scheduler has not yet selected it to run on the CPU.
+
+3. **Blocked/Waiting**: A thread can transition to a blocked or waiting state 
+if it is waiting for a resource or waiting for another thread to perform a 
+specific action. This can happen, for example, if the thread is waiting for I/O 
+operations to complete or if it is waiting to acquire a lock.
+
+4. **Timed Waiting**: Similar to the blocked/waiting state, a thread can enter 
+a timed waiting state when it needs to wait for a specific amount of time. For 
+example, a thread might enter a timed waiting state when it calls methods like 
+`Thread.sleep()` or `Object.wait()` with a specified timeout.
+
+5. **Terminated**: A thread enters the terminated state when it completes its 
+execution or is explicitly terminated by calling its `stop()` method. Once 
+terminated, a thread cannot be restarted.
+
+These states form the basic thread lifecycle in Java. Threads transition between 
+these states based on various factors such as resource availability, 
+synchronization, and explicit thread control methods. Understanding the 
+thread lifecycle is essential for proper thread management and synchronization 
+in multithreaded Java applications.
