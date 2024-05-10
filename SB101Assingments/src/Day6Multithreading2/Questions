@@ -1,0 +1,16 @@
+Q1/ What is the difference between a synchronized method and a synchronized block?
+
+Q2/- What’s the difference between class lock and object lock?
+
+Q3/- Create two threads, one thread to display all even numbers between 1 & 20, another to
+display odd numbers
+between 1 & 20.
+Note: Display all even numbers followed by odd numbers from the main method.
+Hint: use join
+
+Q4/- What is a Race condition, How will you solve the Race condition,explain with an
+Example.
+
+Q5/- What is the Difference between the sleep and join method .
+
+

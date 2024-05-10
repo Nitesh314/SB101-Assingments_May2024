@@ -1,0 +1,30 @@
+
+Q5/- What is the Difference between the sleep and join method .
+
+The `sleep()` and `join()` methods are both used in multithreading, but they serve
+ different purposes:
+
+1. **sleep() Method:**
+   - The `sleep()` method is used to pause the execution of the current thread for
+      a specified amount of time.
+   - It takes a single argument, which is the duration of time to sleep in 
+     milliseconds.
+   - The thread that calls `sleep()` gives up its CPU time slice voluntarily for 
+     the specified duration.
+   - After the sleep duration elapses, the thread becomes eligible to run again, 
+     but it's up to the scheduler to decide when it actually resumes execution.
+
+2. **join() Method:**
+   - The `join()` method is used to wait for the completion of another thread 
+     before proceeding with the current thread.
+   - It's typically used when one thread needs the results of another thread's 
+     execution or when the threads need to synchronize their execution.
+   - When a thread calls `join()` on another thread, it blocks until the joined 
+     thread finishes its execution.
+   - It's possible to specify a timeout in the `join()` method, allowing the 
+     waiting thread to proceed after a certain period even if the joined thread 
+     hasn't finished.
+
+In summary, `sleep()` is used to introduce a delay in the execution of a single 
+thread, while `join()` is used to coordinate the execution of multiple threads by 
+waiting for one thread to complete before proceeding with another.

@@ -1,0 +1,21 @@
+2 What’s the difference between class lock and object lock?
+
+ Class level lock=>
+                1. Class level lock is applicable only for class and every class have only
+                    one class lock that can be use for entire class.
+                
+                2. A class level lock achieve when the class is static other wise not applicable.
+                 
+                3.Using class level lock we can enter inside  class and perform the 
+                  task when the class not release the class level lock than other thread can not
+                  be enter the class.      
+ 
+ 
+ Object level lock=>
+                1. Object level lock is applicable only for Object and every Object have a 
+                   new object level lock that can be use for entire the objects.
+                2. A object level lock achieve when the class is non-static and 
+                   we create the class object then we can applicable for use.
+                3. Using Object level lock we can enter the thread  and perform the task 
+                   but the object can not release the task then other thread can not enter inside 
+                   the class.     

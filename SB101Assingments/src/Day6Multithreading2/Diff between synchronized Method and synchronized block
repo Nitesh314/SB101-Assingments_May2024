@@ -1,0 +1,23 @@
+Q1/ What is the difference between a synchronized method and a synchronized block?
+
+synchronized method=> 
+                   1 When a method is declared as synchronized, it means that the 
+                     entire method is synchronized.
+                     
+				   2 Only one thread can execute the synchronized method at a time,
+				     regardless of which part of the method the thread is executing.
+					
+				   3 This provides simplicity, as the synchronization is applied to
+				     the entire method automatically.
+					   
+synchronized block=>  
+                    1 In contrast, a synchronized block allows you to specify a 
+                      specific section of code to be synchronized.
+                      
+					2 This gives more flexibility, as only the specified block of 
+					  code within the method is synchronized, rather than the entire
+					  method.
+					  
+					3 It allows for finer-grained control over synchronization and 
+					  can improve performance in some cases, as it reduces the 
+					  scope of the lock.                  
