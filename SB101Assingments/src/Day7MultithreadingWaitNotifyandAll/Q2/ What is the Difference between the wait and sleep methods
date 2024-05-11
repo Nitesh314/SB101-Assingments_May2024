@@ -1,0 +1,20 @@
+Q2/ What is the Difference between the wait and sleep methods?
+
+
+wait=>
+      1 wait method belong to object class
+      2 using wait we get accurate position of stop or suspend the program 
+      3 in wait we can use the time to suspend program of sum accurate time also
+      4 wait method is always use in synchronized area.
+      5 if we use wait then it is mandatory to use notify.
+      
+      
+sleep=>
+        1 sleep method belong to Thread class
+        2 using sleep we can suspend the thread for sum specific time.      
+        3 using sleep the program can get the less time to compile and it is happen 
+          also increase the time of compiling 
+          that why if it get less time then remaning time will waist.
+          if it get more time then we get problem 
+          
+          

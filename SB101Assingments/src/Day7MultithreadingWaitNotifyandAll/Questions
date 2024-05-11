@@ -1,0 +1,22 @@
+Q1)Make a thread that will calculate a product of 1 to 10 and another thread (main
+thread) will print the calculated value of the first thread.
+Note: make use of the wait and notify method.
+
+Q2/ What is the Difference between the wait and sleep methods?
+
+Q3/- What is the difference between the Class level lock and the Object level lock?
+
+Q4/- What is the difference between the synchronized block and the synchronized
+method? Write down the different syntaxes of the synchronized block with examples.
+
+Q5/ What is a ThreadPool, how to create a thread pool of 4 threads, and write
+down the difference between the Callable and Runnable interface.
+
+Q6/- Create a ThreadPool of 3 threads, submit the 6 tasks using Callable, and
+from each task check whether the supplied number is Odd or even, if the number
+is Odd return “Odd Number” and if the number is even then return “Even
+Number”.
+Note: Supply the number to the Callable task through the constructor of the
+Callable task class.
+
+Q7/- Explain about thread synchronization(inter-thread communication).

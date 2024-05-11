@@ -1,0 +1,6 @@
+Inter-thread Communication:
+
+wait(): A thread that calls wait() on an object releases the lock and enters the waiting state until another thread calls notify() or notifyAll() on the same object.
+notify(): Wakes up a single thread that is waiting on the object's monitor.
+notifyAll(): Wakes up all threads that are waiting on the object's monitor.
+java
