@@ -1,0 +1,16 @@
+Q1/- Explain the meaning of the deadlock in multithreaded application, when it can occur in
+multithreading applications.Write one example of deadlock.
+
+Deadlock=>
+         in multithreading the deadlock position means the program is dead.
+         here the deadlock occur when the two synchronized program can contains each other property
+         then the deadlock position occur. because the both can have a unique lock
+         but if they can called each one method or program than they can combine each other
+         and the thread not release the lock then we get a deadlock position
+         
+         to avoid the deadlock position we can remove one side of synchronized function or program ..
+         
+         
+         Example in  Main1 class. 
+        
+          

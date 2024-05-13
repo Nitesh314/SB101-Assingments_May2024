@@ -1,0 +1,57 @@
+Note:
+All the questions are compulsory.
+The duration of the test is 3 hours
+Mode of Submission: Github
+Link Don’t seek help from any person/resource during the test.
+Marks Distribution is as follows:
+Q1: 2 Marks
+Q2: 1.5 Marks
+Q3: 1.5 Marks
+Q4: 2 Marks
+Q5: 3 Marks
+
+
+Q1/- Explain the meaning of the deadlock in multithreaded application, when it can occur in
+multithreading applications.Write one example of deadlock.
+
+Q2/- Make a thread that will calculate the product of 1 to 10 number and another
+thread (main thread ) will print the calculated value of the first thread. Make use of
+wait and notify method.
+
+Q3/- Create a ThreadPool of 3 threads, submit the 6 tasks using Callable, and from each
+task calculate the product of supplied number from 1 and return the product from each
+thread. And then print the result.
+Note: Supply the number to the Callable task through the constructor of the Callable
+task class.
+Example if we supply 5 then the product should be (1*2*3*4*5 =120 )
+
+Q4/- Write a multithreading application which should perform the following task:
+● Start the 3 thread
+● Give the name of those threads as Kohli, Dhoni, Rohit
+● Set the max priority to the Dhoni thread.
+● Kohli thread should print from 1 to 10 number
+● Dhoni thread should print Addition of first 20 number.
+● Rohit Thread should print the product of first 10 number.
+Note: Make sure that first Dhoni thread should print then Rohit Thread and then Kohli
+Thread.
+
+Q5/- Consider the following Bean classes:
+class Address{
+state:String
+city:String
+pincode:String
+}
+class Student {
+roll: int
+name:String
+marks: int
+email:String
+password: String
+address: Address // Has-A relationship
+}
+● Inside the Demo1 class Serialize the List of 5 Student objects with all details inside a
+file called “studentdata.txt”
+● Make sure that student password should not be serialized.
+● Inside the Demo2 class Deserialize the List of Student from the “studentdata.txt”
+● After Deserialization add one more Student object inside that List and Serialize it
+back to the “studentdata.txt” file.
