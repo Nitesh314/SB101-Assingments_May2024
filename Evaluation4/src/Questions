@@ -1,0 +1,90 @@
+Note:
+All the Questions are compulsory
+The duration of the test is 3 hour
+Mode of the submission: Github Link
+Don’t seek help from any person/resource during the test.
+Marks distribution is as follows:
+Q1: 4 marks
+Q2: 2 marks
+Q3: 4 marks
+
+Q1/- Consider the following tables:
+
+Department:
+did: int primary key auto_increment
+dname: varchar(12) not null
+location: varchar(12) not null
+
+Employee:
+empId: int primary key auto_increment
+ename: varchar(12) not null
+address: varchar(12)
+email: varchar(20) not null unique
+password: varchar(12)
+salary: int
+deptId: int
+
+● Establish one-to-many relationships between the Department and
+Employee table.
+
+● Write a JDBC application using DAO pattern to implement following
+functionalities:
+
+○ Add a new Department
+○ Register an Employee without deptId
+○ Assign a registered Employee to an existing department.
+○ Login an Employee and display his profile with a Welcome
+
+message.
+○ Get All the Department details.
+○ Update the Department location
+○ Update the existing employee password.
+○ Delete a department by did,
+
+■ Note: If a Department is deleted then all the assigned
+employees deptId should be set to Null for that
+Department.
+
+Q2/- How many types of relationships exist among tables in the
+Database? Explain with some examples, and also mention how to
+establish these relationships among tables with examples.
+
+Q3/- Consider the following table:
+create table Product(
+productId int primary key,
+productName varchar(12) not null,
+price int,
+quantity int);
+
+● Write a JDBC application using the DAO pattern to implement
+the following functionalities:
+
+ProductDao(interface):
+● public String addProduct(Product product) throws ProdcutException
+● public List<Prodcut> getAllProducts() throws ProductException
+● public List<Product> getAllProductQuantityLessThan(int quantity)throws
+
+ProductException.
+● public String addProductQuantity(int productId, int Quantity)throws
+ProductException
+
+● Public String deleteProductByProductName(String pname)throws
+ProductException
+
+● public Product getProductByProductName(String pname)throws
+ProductException
+
+Note: ProductException should be checked Exception.
+
+Write the use cases for the above functionalities.
+
+create table Employee(
+      empId int primary key auto_increment,
+      ename varchar(12) not null,
+      address varchar(12),
+      email varchar(20) not null unique,
+      password varchar(12),
+      salary int,
+      deptId int,
+      Foreign Key (deptId) references Department (did) ON DELETE SET NULL ON UPDATE CASCADE
+     );
