@@ -1,0 +1,66 @@
+Q1/- Consider the following tables:
+
+Department:
+did
+dname
+location
+
+Employee:
+empId
+ename
+address
+mobile
+deptid
+
+● Establish the one-to-many relationship between Department and Employee
+
+● Write a JDBC application to insert details of Employee by taking the input 
+  from the User.
+
+● Write a JDBC application to insert details of Employee by taking the input from 
+  the User.
+
+● Write a JDBC application to get all the Employee details who work in the 
+  “Account” department.
+
+● Write a JDBC application to delete the Dependent based on did, by taking the 
+  input from the user.
+
+● Write a JDBC application to get the Department details of those employees who 
+  live in Mumbai.
+  
+  
+  Department:
+did
+dname
+location
+
+Employee:
+empId
+ename
+address
+mobile
+deptid
+  
+  //Example for creating the table in mysql;
+  create table Department(
+  did int PRIMARY KEY,
+  dname varchar(20),
+  location varchar(20)
+  );
+  
+  
+ //Example to stablish the one to many relation ship 
+  
+  create table Employee(
+  empId int PRIMARY KEY,
+  ename varchar(20),
+  address varchar(20),
+  mobile varchar(10),
+  deptId int,
+  FOREiGN KEY (deptId) references Department(did)
+  );
+  
+  
+  
+  
