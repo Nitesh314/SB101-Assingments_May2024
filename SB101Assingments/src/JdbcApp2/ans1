@@ -1,0 +1,43 @@
+What is the difference between Statement and PreparedStatement?
+
+1=>Statement
+  
+   1: it is Used for executing static SQL queries, where the SQL command is 
+       hardcoded directly into the Java code.
+       
+   2:Vulnerable to SQL injection attacks because it directly incorporates user
+     inputs into the SQL query. 
+   
+   3:SQL queries are not precompiled, which means each query is parsed and executed
+     separately. This can be slower for repeated queries. 
+     
+   4:Typically used for executing a single SQL query. Not designed for repeated use with
+     different parameters.
+   
+   5:Simpler for executing static SQL queries. Less boilerplate code.   
+   
+   6:Use Statement for simple, static queries where SQL injection is not a concern.
+
+
+2=>PreparedStatement
+
+   1:Used for executing dynamic or parameterized SQL queries, where the SQL command is 
+     precompiled and parameters can be set dynamically.   
+     
+   2:Helps prevent SQL injection by separating the SQL logic from the data. Parameters 
+     are bound to the query separately, making it safer. 
+     
+   3:SQL queries are precompiled by the database, allowing for faster execution, especially 
+      when the same query is executed multiple times with different parameters.
+      
+   4:Designed for repeated execution with different parameters. Ideal for batch processing 
+      and executing the same query multiple times.   
+      
+   5:More verbose due to parameter setting, but provides 
+     better flexibility and security.      
+     
+   6:Use PreparedStatement for dynamic queries, especially when dealing with user inputs, 
+     to prevent SQL injection and improve performance.  
+     
+     
+        

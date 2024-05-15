@@ -1,0 +1,20 @@
+Q1/- What is the difference between Statment and PreparedStatement?
+
+Q2/- Consider the following table :
+Product
+pid int primary key
+pname varchar not null
+quantity int
+price int
+
+● Write a Jdbc application to insert 5 different types of Products by taking input from
+the User.
+
+● Write a Jdbc application to insert a new Product without quantity and price by taking
+input from the user.
+
+● Write a Jdbc application to update the price and quantity of a product by taking the
+input from the user.
+
+● Write a Jdbc application to delete all the Products whose quantity is less than 2
+
